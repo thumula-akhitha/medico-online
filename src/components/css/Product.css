@@ -4,7 +4,11 @@
     justify-content: space-around;
     flex-wrap: wrap;
 }
+.card :disabled{
+    display:flex;
+}
 .card{
+    display:block;
     min-width: 300px;
     min-height: 400px;
     border: 1px solid #eee;
