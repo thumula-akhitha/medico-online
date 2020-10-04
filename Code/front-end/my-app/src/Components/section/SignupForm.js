@@ -94,12 +94,7 @@ signup(e){
     contactNumber: document.getElementById('contact_number').value
   }
 
-console.log("kalli")
-//   const requestOptions = {
-//     method: 'POST',
-//     headers: { 'Content-Type': 'application/json' },
-//     body: JSON.stringify(request)
-// };
+
 axios.post('http://127.0.0.1:3333/onlinemedico/signup', request)
     .then(response => {
       console.log(response.data.message)
@@ -107,7 +102,7 @@ axios.post('http://127.0.0.1:3333/onlinemedico/signup', request)
         document.getElementById("errors").innerHTML = "Email Already Exists"    
       }
       else {
-        this.props.history.push('/Login');
+        this.props.history.push('/onlinemedicon/login');
       }
       
     })
@@ -118,7 +113,7 @@ axios.post('http://127.0.0.1:3333/onlinemedico/signup', request)
     return (
       <div className='wrapper'>
         <div className='form-wrapper'>
-          <h2 className='heading'>Create Account</h2>
+          <h2 className='signheading'>Create Account</h2>
           <form onSubmit={this.signup}>
             <div className='fullName'>
               <label className='formlabel'>Full Name</label>

@@ -4,17 +4,28 @@ header{
     justify-content: space-around;
     align-items: center;
     overflow: hidden;
+    background-color: #a5f0d8;
 
 }
 header .logo a{
     font-size:0.8em;
     color: black;
+    position: absolute;
+    left: 103px;
+    top: 10px;
+}
+.headerdropdown{
+    margin-left: 20px;
+    margin-top: -6px;
 }
 header nav{
     font-family: 'emoji';
     font-weight: bold;
     margin-top: 1em;
     display: flex;
+    margin-left:10em;
+    z-index: 10000;
+    position: absolute;
 }
 nav ul li{
     list-style: none;

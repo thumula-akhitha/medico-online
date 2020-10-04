@@ -5,7 +5,7 @@ import {Route,Redirect} from "react-router-dom";
 import Cart from './section/Cart';
 import Contact from './section/Contact';
 import Shipping from './section/Shipping';
-import Upload from './section/SelectDropDown';
+import Upload from './section/ImageFile';
 import Star from './section/StarComponent';
 import OrderHistory from './section/OrderHistory';
 import AdminPage from '../Components/section/Admin/AdminPage';
@@ -23,11 +23,13 @@ import CheckoutCart from '../Components/section/checkoutcart';
 export class Section extends Component {
     render() {
         return (
+            <div>	
+            <Route path="/onlinemedico" component={Header}  />
             <section >
                  <Route exact path="/">
-                     <Redirect to="/login" />
+                     <Redirect to="/onlinemedico/login" />
                  </Route>
-                <Route path="/onlinemedico" component={Header}  />
+                
                 <Route path="/mainadmin" component={Admin}  />                             
                 <Route path="/onlinemedico/product" component={Products} exact />
                 <Route path="/onlinemedico/product/:id" component={Details} />
@@ -39,15 +41,16 @@ export class Section extends Component {
                 <Route path="/onlinemedico/history" component={OrderHistory}/>
                 <Route path="/onlinemedico/admin" component={AdminPage}/>
                 <Route path="/onlinemedico/track" component={Tracking}/>
-                <Route path="/login" component={Login}/>
+                <Route path="/onlinemedico/login" component={Login}/>
                 <Route path="/onlinemedico/sign" component={SignIn}/>
                 <Route path="/onlinemedico/forgot" component={Forgot}/>
                 <Route path="/onlinemedico/reset" component={Reset}/>
-                <Route path="/onlinemedico" component={Footer}/>
+               
                 <Route path="/onlinemedico/checkout" component={Checkout}/>
                 <Route path="/onlinemedico/checkcart" component={CheckoutCart}/>
             </section>
-            
+            <Route path="/onlinemedico" component={Footer}/> 	
+            </div>
         )
     }
 }
