@@ -19,6 +19,7 @@ import Forgot from '../Components/section/ForgotPassword';
 import Reset from '../Components/section/ResetPasswordPage';
 import Checkout from '../Components/section/checkout';
 import CheckoutCart from '../Components/section/checkoutcart';
+import Logout from '../Components/section/Logout';
 import OrderDetails from '../Components/section/OrderDetails'; 
 import PastOrder from '../Components/section/PastOrder';
 
@@ -27,11 +28,11 @@ export class Section extends Component {
         return (
             <div>	
             <Route path="/onlinemedico" component={Header}  />
+            <Route path="/mainadmin" component={Admin}  />   
             <section >
                  <Route exact path="/">
                      <Redirect to="/onlinemedico/login" />
-                 </Route>
-                <Route path="/mainadmin" component={Admin}  />                             
+                 </Route>                                        
                 <Route path="/onlinemedico/product" component={Products} exact />
                 <Route path="/onlinemedico/product/:id" component={Details} />
                 <Route path="/onlinemedico/cart" component={Cart} />
@@ -51,6 +52,7 @@ export class Section extends Component {
                 <Route path="/onlinemedico/checkcart" component={CheckoutCart}/>
                 <Route path="/onlinemedico/pastOrder" component={PastOrder}/>
 
+                <Route path="/onlinemedico/logout" component={Logout}/>
             </section>
             <Route path="/onlinemedico" component={Footer}/> 	
             </div>

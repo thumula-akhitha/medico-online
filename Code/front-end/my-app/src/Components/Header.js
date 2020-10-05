@@ -49,9 +49,6 @@ export class Header extends Component {
             <li>
               <Link to="/onlinemedico/upload">UploadPrescription</Link>
             </li>
-            <li>
-              <Link to="/onlinemedico/login">Login / Register</Link>
-            </li>
             <li className="close" onClick={this.menuToggle}>
               <img src={Close} alt="" width="20" />
             </li>
@@ -69,7 +66,7 @@ export class Header extends Component {
             {/* <img src={profile}/> */}
              <Dropdown.Item href="#/action-1">Previous Orders</Dropdown.Item>
               <Dropdown.Item href="#/action-2">Current Orders</Dropdown.Item>
-              <Dropdown.Item href="#/action-3">Logout</Dropdown.Item>
+              <Dropdown.Item href="http://localhost:3000/onlinemedico/logout">Logout</Dropdown.Item>
               </DropdownButton>
           </div>
         </nav>

@@ -43,11 +43,10 @@
   padding: 3em;
 }
 .login-form-control{
-    font-size:0.9em;
     font-family: 'Source Serif Pro', serif;
-    width: 22.5em;
+    width: 28em;
     border-radius: 7px;
-    font-size:large;   
+    font-size: 14px;  
 }
 .login-btn{
     padding:0.5em;

@@ -194,8 +194,15 @@ async addProduct({ auth, request, response, params }) {
     console.log(request.body);
     await use('Database').table('medicines').insert(request.body)
     return 'added products';
-
 }
+
+
+async addShippingAddress({request, response }) {
+    console.log(request.body);
+    await use('Database').table('shipping_addresses').insert(request.body)
+    return 'added shippingaddress';
+}
+
 
 
 
