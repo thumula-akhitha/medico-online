@@ -10,10 +10,14 @@
 	font: bold 16px sans-serif;
 	padding-left: 20px;
     padding-top: 20px;
-    font-family: 'emoji';
+	font-family: 'emoji';
+	padding-left: 67px;
 }
 .firsttoknow{
 	color: lightgray;
+	font-family: sans-serif;
+	font-weight: 100;
+	font-size: 15px;
 }
 
 .btnIn{
@@ -103,15 +107,22 @@
 	color:  inherit;
 }
 .worksTime{
-	margin-left: 805px;
-    margin-top: -35px;
+
+	margin-top: -35px;
+	margin-left: 785px;
 }
 .workingHours{
-    color: lightgray;
+	font-family: sans-serif;
+    font-weight: 100;
+	color: lightgray;
+	font-size: 15px;
 }
 .timings{
 	color: lightgray;
 	margin-top: 9px;
+	font-family: sans-serif;
+	font-weight: 100;
+	font-size: 15px;
 
 }
 .footer-distributed .footer-company-name{
@@ -231,7 +242,7 @@
 .footer-distributed .footer-icons{
 	position: absolute;
     /* left: 106px; */
-    top: 92em;
+    /* top: 92em; */
     left: 9em;
 }
 
@@ -264,14 +275,23 @@
 .mobilePara{
 	margin-left: 11px;
 	color: lightgray;
+	font-family: sans-serif;
+	font-weight: 100;
+	font-size: 15px;
 }
 .mailPara{
 	color: lightgray;
 	margin-left: 11px;
+	font-family: sans-serif;
+	font-weight: 100;
+	font-size: 15px;
 }
 .locationPara{
 	margin-left: 11px;
 	color: lightgray;
+	font-family: sans-serif;
+	font-weight: 100;
+	font-size: 15px;
 }
 .location{
 	margin-bottom: 10px;

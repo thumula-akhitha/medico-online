@@ -5,11 +5,11 @@ import Contact from './section/Contact';
 import {Link} from 'react-router-dom'
 import Signup from './section/SignupForm';
 
-const brandLogo = require('../Components/images/logo.PNG');
+// const brandLogo = require('../Components/images/logo.PNG');
 export class Footer extends Component {
     constructor(){
         super();
-        this.handleSignUp=this.handleSignUp.bind(this);
+        // this.handleSignUp=this.handleSignUp.bind(this);
       
     }
     
