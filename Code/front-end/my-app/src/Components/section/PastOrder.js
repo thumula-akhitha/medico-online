@@ -4,7 +4,6 @@ import "../css/PastOrder.css";
 import {Link} from 'react-router-dom';
 import "../images/tablet.jpg"
 
-import {FaBox} from "react-icons/fa";
 
 class PastOrder extends Component {
   constructor(props) {

@@ -5,7 +5,7 @@ class Logout extends React.Component {
         return (
             <div className="logout-form">
               <p>You have logged out successfully.</p>
-              <p>Please click here to  <a className="logout-link" href="http://localhost:3000/Login">Login</a> &nbsp;again.</p>
+              <p>Please click here to  <a className="logout-link" href="http://localhost:3000/onlinemedico/login">Login</a> &nbsp;again.</p>
             </div>
         );
     }

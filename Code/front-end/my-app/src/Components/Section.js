@@ -19,18 +19,17 @@ import Forgot from '../Components/section/ForgotPassword';
 import Reset from '../Components/section/ResetPasswordPage';
 import Checkout from '../Components/section/checkout';
 import CheckoutCart from '../Components/section/checkoutcart';
-
+import Logout from '../Components/section/Logout';
 export class Section extends Component {
     render() {
         return (
             <div>	
             <Route path="/onlinemedico" component={Header}  />
+            <Route path="/mainadmin" component={Admin}  />   
             <section >
                  <Route exact path="/">
                      <Redirect to="/onlinemedico/login" />
-                 </Route>
-                
-                <Route path="/mainadmin" component={Admin}  />                             
+                 </Route>                                        
                 <Route path="/onlinemedico/product" component={Products} exact />
                 <Route path="/onlinemedico/product/:id" component={Details} />
                 <Route path="/onlinemedico/cart" component={Cart} />
@@ -44,10 +43,10 @@ export class Section extends Component {
                 <Route path="/onlinemedico/login" component={Login}/>
                 <Route path="/onlinemedico/sign" component={SignIn}/>
                 <Route path="/onlinemedico/forgot" component={Forgot}/>
-                <Route path="/onlinemedico/reset" component={Reset}/>
-               
+                <Route path="/onlinemedico/reset" component={Reset}/>               
                 <Route path="/onlinemedico/checkout" component={Checkout}/>
                 <Route path="/onlinemedico/checkcart" component={CheckoutCart}/>
+                <Route path="/onlinemedico/logout" component={Logout}/>
             </section>
             <Route path="/onlinemedico" component={Footer}/> 	
             </div>

@@ -2,8 +2,11 @@ import React from "react";
 import credit from "../images/credit.PNG";
 import { FaCreditCard, FaPlus } from "react-icons/fa";
 import "../css/newcard.css";
+
 const NewCard = ({ card, handleChange, handleSubmit }) => {
+  
   return (
+
     <div className="credit-card-box">
       <div class="panel-heading display-table">
         <div className="display-tr">
@@ -119,6 +122,7 @@ const NewCard = ({ card, handleChange, handleSubmit }) => {
                 id="btn-block"
                 className="btn btn-lg"
                 type="submit"
+                onClick={this.addshipping}
               >
                 Add Card
               </button>
