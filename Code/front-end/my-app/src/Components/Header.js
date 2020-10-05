@@ -6,8 +6,10 @@ import CartIcon from "./images/Icon.PNG";
 import { Link } from "react-router-dom";
 import "./css/Header.css";
 import { DataContext } from "./Context";
-import { FaShoppingCart } from "react-icons/fa";
+import { FaShoppingCart,FaUser } from "react-icons/fa";
+// import Dropdown, { DropdownTrigger, DropdownContent} from 'react-simple-dropdown';
 
+const profile=require('./images/Account.PNG')
 export class Header extends Component {
   static contextType = DataContext;
 
@@ -54,14 +56,15 @@ export class Header extends Component {
           <div className="nav-cart">
             <span>{cart.length}</span>
             <Link to="/onlinemedico/cart">
-              <FaShoppingCart style={{color:"black"}}/>
+              <FaShoppingCart style={{color:"white"}}/>
               {/* <img src={CartIcon} alt="" width="20" /> */}
             </Link>
           </div>
           <div className="headerdropdown" >
-          <DropdownButton id="dropdown-basic-button" title="Setting">
-            
-              <Dropdown.Item href="#/action-1">Previous Orders</Dropdown.Item>
+            <DropdownButton id="dropdown-basic-button" title={
+        <span><FaUser /> My Account </span>}>
+            {/* <img src={profile}/> */}
+             <Dropdown.Item href="#/action-1">Previous Orders</Dropdown.Item>
               <Dropdown.Item href="#/action-2">Current Orders</Dropdown.Item>
               <Dropdown.Item href="http://localhost:3000/onlinemedico/logout">Logout</Dropdown.Item>
               </DropdownButton>

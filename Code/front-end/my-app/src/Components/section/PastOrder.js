@@ -41,7 +41,7 @@ class PastOrder extends Component {
       <Image id="orderImage" src={require("../images/tablet.jpg")}  rounded />
     </Col>
 <Col>September 30</Col>
-<Col className="orderNumber"><Link to="/onlinemedico/orderdetails">9876545678987</Link></Col>
+<Col className="orderNumber"><Link to="/onlinemedico/history">9876545678987</Link></Col>
 <Col style={{color:"Green"}}><h5>Shipped</h5></Col>
    </Row>
    </Container>
