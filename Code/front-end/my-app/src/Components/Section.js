@@ -28,11 +28,11 @@ export class Section extends Component {
         return (
             <div>	
             <Route path="/onlinemedico" component={Header}  />
-            <Route path="/mainadmin" component={Admin}  />   
-            <section >
-                 <Route exact path="/">
+            <Route path="/mainadmin" component={Admin}  />  
+            <Route path="/" exact>
                      <Redirect to="/onlinemedico/login" />
-                 </Route>                                        
+            </Route> 
+            <section >                                                         
                 <Route path="/onlinemedico/product" component={Products} exact />
                 <Route path="/onlinemedico/product/:id" component={Details} />
                 <Route path="/onlinemedico/cart" component={Cart} />
@@ -51,7 +51,6 @@ export class Section extends Component {
                 <Route path="/onlinemedico/orderDetails" component={OrderDetails}/>
                 <Route path="/onlinemedico/checkcart" component={CheckoutCart}/>
                 <Route path="/onlinemedico/pastOrder" component={PastOrder}/>
-
                 <Route path="/onlinemedico/logout" component={Logout}/>
             </section>
             <Route path="/onlinemedico" component={Footer}/> 	
