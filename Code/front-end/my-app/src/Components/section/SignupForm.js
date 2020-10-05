@@ -95,14 +95,14 @@ signup(e){
   }
 
 
-axios.post('http://127.0.0.1:3333/onlinemedico/signup', request)
+axios.post('http://127.0.0.1:3333/onlinemedico/user/signup', request)
     .then(response => {
       console.log(response.data.message)
       if(response.data.message==="error"){   
         document.getElementById("errors").innerHTML = "Email Already Exists"    
       }
       else {
-        this.props.history.push('/onlinemedicon/login');
+        this.props.history.push('/onlinemedico/login');
       }
       
     })
@@ -165,25 +165,25 @@ axios.post('http://127.0.0.1:3333/onlinemedico/signup', request)
 
 
 
-async function signup(e) {
-  e.preventDefault();
-  let request = {
-    fullName: document.getElementById('fullName').value,
-    password: document.getElementById('cpassword').value,
-    email: document.getElementById('email').value,
-    contactNumber: document.getElementById('contact_number').value
-  }
+// async function signup(e) {
+//   e.preventDefault();
+//   let request = {
+//     fullName: document.getElementById('fullName').value,
+//     password: document.getElementById('cpassword').value,
+//     email: document.getElementById('email').value,
+//     contactNumber: document.getElementById('contact_number').value
+//   }
 
 
-  const requestOptions = {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify(request)
-};
-await fetch('http://127.0.0.1:3333/onlinemedico/signup', requestOptions)
-    .then(response => response.json())
-    .then(data => console.log(data));
+//   const requestOptions = {
+//     method: 'POST',
+//     headers: { 'Content-Type': 'application/json' },
+//     body: JSON.stringify(request)
+// };
+// await fetch('http://127.0.0.1:3333/onlinemedico/signup', requestOptions)
+//     .then(response => response.json())
+//     .then(data => console.log(data));
 
-}
+// }
 
 export default SignupForm;

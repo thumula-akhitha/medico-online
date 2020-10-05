@@ -62,9 +62,12 @@ export class Header extends Component {
           </div>
           <div className="headerdropdown" >
             <DropdownButton id="dropdown-basic-button" title={
-        <span><FaUser /> My Account </span>}>
+        <span><FaUser style={{marginBottom:"4px",marginRight:"3px"}}/>My Account</span>}>
             {/* <img src={profile}/> */}
-             <Dropdown.Item href="#/action-1">Previous Orders</Dropdown.Item>
+              <Dropdown.Item href="http://localhost:3000/onlinemedico">
+                My Profile
+              </Dropdown.Item>
+              <Dropdown.Item href="http://localhost:3000/onlinemedico/pastOrder">Previous Orders</Dropdown.Item>
               <Dropdown.Item href="#/action-2">Current Orders</Dropdown.Item>
               <Dropdown.Item href="http://localhost:3000/onlinemedico/logout">Logout</Dropdown.Item>
               </DropdownButton>
